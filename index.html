@@ -44,6 +44,9 @@ body{margin:0;background:var(--ink);color:var(--ink);font-family:var(--body);fon
 .menu-panel a:last-child{border-bottom:0}
 .menu-panel a:hover,.menu-panel a:focus-visible{background:var(--yellow);outline:none}
 .menu-panel .dot{width:14px;height:14px;border-radius:50%;border:2px solid var(--ink);flex:none;background:var(--ink)}
+.menu-panel a.menu-pr{font-family:var(--body);font-weight:500;font-size:.95rem;color:var(--muted);padding-block:12px}
+.menu-panel .dot.w{background:var(--paper)}
+.pr{scroll-margin-top:80px}
 .menu-panel .dot.y{background:var(--yellow)}.menu-panel .dot.b{background:var(--blue)}.menu-panel .dot.r{background:var(--red)}
 .hero img{display:block;width:100%;height:auto;filter:drop-shadow(0 6px 0 rgba(20,16,24,.55))}
 .eyebrow{display:inline-block;font-family:var(--display);font-size:.95rem;background:var(--yellow);color:var(--ink);padding:.1em .6em;border:3px solid var(--ink);transform:rotate(-3deg);margin-bottom:6px}
@@ -125,6 +128,15 @@ h2 .tag{font-family:var(--body);font-weight:800;font-size:.8rem;background:var(-
 .cast .yr{font-size:.78rem;color:var(--muted);margin-left:4px}
 .cast li.wide{grid-column:1/-1}
 
+.pr{margin-top:10px;background:rgba(255,255,255,.9);border:2px solid var(--ink);border-radius:14px;padding:12px 14px;font-weight:500;font-size:.88rem;line-height:1.65;display:flex;flex-direction:column;gap:6px}
+.pr p{margin:0}
+.pr-label{font-size:.72rem;letter-spacing:.08em;color:var(--muted);border-bottom:1px dashed var(--muted);padding-bottom:4px}
+.pr-name{font-weight:700;font-size:1rem}
+.pr-name small{display:block;font-size:.75rem;font-weight:500;color:var(--muted)}
+.pr-msg b{color:var(--purple)}
+.pr-site{font-size:.8rem;color:var(--muted)}
+.pr-site a{color:var(--blue);font-weight:700;text-underline-offset:3px}
+.pr-site a:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:3px}
 footer{text-align:center;color:var(--paper);font-size:.9rem;font-weight:500;text-shadow:0 1px 3px rgba(0,0,0,.8);padding-top:4px}
 .fact span,.rule .t em,.slot .clock,.day h3,.label,h2{font-weight:400}
 
@@ -145,6 +157,7 @@ footer{text-align:center;color:var(--paper);font-size:.9rem;font-weight:500;text
     <a href="#schedule"><i class="dot"></i>上演時間</a>
     <a href="#plays"><i class="dot b"></i>魔王チーム</a>
     <a href="#play-time"><i class="dot r"></i>タイムリミットチーム</a>
+    <a href="#pr" class="menu-pr"><i class="dot w"></i>スポンサー・サイト制作協力</a>
   </nav>
 </div>
 <main class="wrap" id="top">
@@ -280,7 +293,7 @@ footer{text-align:center;color:var(--paper);font-size:.9rem;font-weight:500;text
           <li><span class="role">B</span><span class="name">田中 和実<span class="yr">2年</span></span></li>
           <li><span class="role">C</span><span class="name">向吉 花菜<span class="yr">1年</span></span></li>
           <li><span class="role">D</span><span class="name">石井 沙波<span class="yr">1年</span></span></li>
-          <li class="wide"><span class="role">E</span><span class="name">浮穴 雲雀<span class="yr">1年</span></span></li>
+          <li><span class="role">E</span><span class="name">浮穴 雲雀<span class="yr">1年</span></span></li>
         </ul>
       </div>
       <div>
@@ -291,6 +304,13 @@ footer{text-align:center;color:var(--paper);font-size:.9rem;font-weight:500;text
       </div>
     </div>
   </section>
+
+  <aside class="pr" id="pr" aria-label="スポンサー・サイト制作協力">
+    <p class="pr-label">PR｜スポンサー・サイト制作協力</p>
+    <p class="pr-name"><small>第57代生徒会長 兼 写真部部長</small>平野 治輝</p>
+    <p class="pr-msg">写真部×演劇部の兼部部員はたくさんいます！！<br>演劇の後は、<b>「写真部の写真館」</b>（3F奥の社会科教室）にも是非お越しください！！</p>
+    <p class="pr-site">（個人）運営サイト <a href="https://平野先生.jp/" target="_blank" rel="noopener">平野先生.jp</a></p>
+  </aside>
 
   <footer>流山高校演劇部・文化祭公演</footer>
 </main>
